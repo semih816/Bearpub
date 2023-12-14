@@ -1,0 +1,375 @@
+ /*! Settings Start*/ 
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins&family=Rubik&display=swap');
+*{
+  margin:0;
+  padding:0;
+  font-family: 'Poppins', sans-serif;
+  font-family: 'Rubik', sans-serif;
+  color: white;
+    
+}
+body{
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background: linear-gradient(to left,#232323, #464646 );
+}
+ /*! Settings End*/ 
+ /*! NavBar Start*/ 
+
+.nav-link a{
+  color: white;  
+}
+.nav-item a:hover{
+  color: white;
+  text-shadow: 5px 5px 10px #f1faee,
+  -5px 5px 10px #f1faee,
+  -5px 5px 10px #f1faee,
+  5px -5px 10px #f1faee;
+}
+.dropdown-menu{
+  color: black;
+}
+.navBar-Poz{
+  z-index: 2; 
+  width: 100%;
+}
+.navBar-İmg{
+  border-radius: 30px;
+}
+.navBar-Buttons{
+  margin-bottom: 5px;
+}
+ /*! NavBar End*/ 
+  /*! Login/Register Start*/ 
+.login-box {
+  border: solid;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  padding: 40px;
+  transform: translate(-50%, -50%);
+  background: transparent;
+  backdrop-filter: blur(20px);
+  box-sizing: border-box;
+  box-shadow: 0 15px 25px rgba(0,0,0,.6);
+  border-radius: 10px;
+  border-color: rgba(0,0,0,.6);
+}
+.login-box h2 {
+  margin: 0 0 30px;
+  padding: 0;
+  color: #fff;
+  text-align: center;
+  letter-spacing: 2px;
+}
+.login-box .user-box {
+  position: relative;
+}
+.login-box .user-box input {
+  width: 100%;
+  padding: 10px 0;
+  font-size: 16px;
+  color: #fff;
+  margin-bottom: 30px;
+  border: none;
+  border-bottom: 1px solid #03e9f4;
+  outline: none;
+  background: transparent;
+}
+.login-box .user-box input::selection{
+    border-bottom: 1px solid #03e9f4;
+}
+.login-box .user-box label {
+    position: absolute;
+    top:0;
+    left: 0;
+    padding: 10px 0;
+    font-size: 16px;
+    color: #fff;
+    pointer-events: none;
+    transition: .5s;
+  }
+.login-box .user-box input:focus ~ label,
+.login-box .user-box input:valid ~ label {
+  top: -20px;
+  left: 0;
+  color: #03e9f4;
+  font-size: 12px;
+}
+.login-box form a {
+  position: relative;
+  display: inline-block;
+  padding: 10px 20px;
+  color: #03e9f4;
+  font-size: 16px;
+  text-decoration: none;
+  text-transform: uppercase;
+  overflow: hidden;
+  transition: .5s;
+  margin-top: 40px;
+  letter-spacing: 4px
+}
+.login-box a:hover {
+    background: #03e9f4;
+    color: #fff;
+    border-radius: 5px;
+    box-shadow: 0 0 1px #03e9f4,
+                0 0 5px #03e9f4,
+                0 0 10px #03e9f4,
+                0 0 20px #03e9f4;
+}
+.login-box a span {
+    position: absolute;
+    display: block;
+}
+.login-box a span:nth-child(1) {
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 2px;
+    background: linear-gradient(90deg, transparent, #03e9f4);
+    animation: btn-anim1 1s linear infinite;
+}
+.login-box a span:nth-child(2) {
+    top: -100%;
+    right: 0;
+    width: 2px;
+    height: 100%;
+    background: linear-gradient(180deg, transparent, #03e9f4);
+    animation: btn-anim2 1s linear infinite;
+    animation-delay: .25s
+}
+.login-box a span:nth-child(3) {
+  bottom: 0;
+  right: -100%;
+  width: 100%;
+  height: 2px;
+  background: linear-gradient(270deg, transparent, #03e9f4);
+  animation: btn-anim3 1s linear infinite;
+  animation-delay: .5s
+}
+.login-box a span:nth-child(4) {
+  bottom: -100%;
+  left: 0;
+  width: 2px;
+  height: 100%;
+  background: linear-gradient(360deg, transparent, #03e9f4);
+  animation: btn-anim4 1s linear infinite;
+  animation-delay: .75s
+} 
+ /*! Login/Register End*/ 
+ /*! Project Start*/ 
+.post-image{
+  width: 154px;
+  height: 168px;
+}
+ /*! Project End*/ 
+ /*! Footer Start*/ 
+
+.shine{
+  position: relative;
+  font-family: sans-serif;
+  color: #fff;    
+  letter-spacing: 2px;
+  overflow: hidden;
+  background: linear-gradient(90deg, #000, white, #000);
+  background-repeat: no-repeat;
+  background-size: 80%;
+  animation: animate 3s linear infinite;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: rgba(254, 254, 254, 0.31);
+  margin: 0;
+  padding: 0;
+  width: 350px;
+}
+.footer-color{
+  background-color: #4a4e69;
+}
+.footer-Social{
+  background-color: rgba(0, 0, 0, 0.2)
+}
+.Social-İcon{
+  margin-left: 10px;
+  margin-right: px;
+  margin-top: 4px;
+  width: 30px;
+  border-radius: 50%;
+}
+.Social-Link{
+  text-decoration: none;
+}
+ /*! Footer End*/ 
+ /*! UsersList Start*/ 
+
+.Users-Title{
+  margin-top: 10px; 
+  text-align: center;
+}
+.user-Card{
+  box-shadow: 10px 10xp 10px 10px rgb(255, 255, 255);
+}
+.user-Card-BG{
+  max-width: 650px; background-color: #e9c46a; 
+  box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+}
+.card-img{
+  width: 80px; 
+  height: 80px; 
+  margin-left: 10px;
+}
+.card-MT{
+  margin-top: 11px;
+}
+ /*! UsersList End*/ 
+ /*! Animate Start*/ 
+@keyframes animate {
+    0% {
+        background-position: -500%;
+    }
+    100% {
+        background-position: 500%;
+    }
+}
+@keyframes btn-anim1 {
+    0% {
+      left: -100%;
+    }
+    50%,100% {
+      left: 100%;
+    }
+  }
+@keyframes btn-anim2 {
+    0% {
+      top: -100%;
+    }
+    50%,100% {
+      top: 100%;
+    }
+  }
+@keyframes btn-anim3 {
+    0% {
+      right: -100%;
+    }
+    50%,100% {
+      right: 100%;
+    }
+  }
+@keyframes btn-anim4 {
+    0% {
+      bottom: -100%;
+    }
+    50%,100% {
+      bottom: 100%;
+    }
+  }
+ /*! Animate End*/ 
+ /*! Responsive Start*/ 
+.res-hide{
+   width: 100%;
+   display: none;
+}
+@media screen and (max-width: 1200px) {
+  .deneme{
+    padding-left: 50px;
+    padding-bottom: 0px;
+  }
+}
+@media screen and (max-width: 993px) {
+    #users{
+      margin-left: 10%;
+    }
+    .carousel-inner{
+      height: 300px;
+    }
+    .post-image{
+      width: 130px;
+      height: 150px;
+    }
+    .login-box {
+      width: 500px;
+  }
+}
+@media screen and (max-width: 767px) {
+  
+    #users{
+        margin-left: 0%;
+    }
+    .carousel-inner{
+        height: 300px;
+    }
+    .post-image{
+      width: 100px;
+      height: 120px;
+    }
+    .res-hide{
+      display: block;
+    }
+    .list-group{
+      width: 300px;
+      margin-bottom: 10px;
+      font-size: 15px;
+    }
+    .res-title{
+      font-size: 20px;
+    }
+    .res-btn{
+      width: 100px;
+      margin-bottom: 20px;
+      font-size: 14px;
+    }
+    .res-badge{
+    font-size: 10px;
+    }
+    .res-post-title {
+    font-size: 20px;
+    }
+    .login-box {
+    width: 300px;
+  }
+}
+@media screen and (max-width: 556px) {
+  
+   #footer-text{
+  width: 700;
+   }
+   .post-image{
+  width: 90px;
+  height: 110px;
+  }
+  .res-btn{
+  width: 80px;
+  margin-bottom: 20px;
+  font-size: 10px;
+  }
+  .res-post-title {
+  font-size: 15px;
+  }
+}
+@media screen and (max-width: 450px) {
+  
+  #footer-text{
+  width: 700;
+  }
+  .post-image{
+  width: 90px;
+  height: 110px;
+   
+ }
+ .res-btn{
+  width: 50px;
+  margin-bottom: 20px;
+  font-size: 9px;
+ }
+ .res-post-title {
+  font-size: 13px;
+}
+ .res-post-content{
+  font-size: 10px;
+ }
+}
+
+ /*! Responsive End*/ 
+
+
